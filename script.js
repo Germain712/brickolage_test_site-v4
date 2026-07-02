@@ -1,4 +1,6 @@
-// Responsive hamburger menu
+// ===============================
+// Responsive Hamburger Menu
+// ===============================
 const navToggle = document.querySelector('.nav-toggle');
 const mainNav = document.querySelector('.main-nav');
 
@@ -9,17 +11,30 @@ if (navToggle && mainNav) {
   });
 }
 
-// Simple image lightbox
-const galleryItems = document.querySelectorAll('.gallery-item img');
+// Close menu when clicking a link (mobile)
+const navLinks = document.querySelectorAll('.main-nav a');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if (mainNav.classList.contains('is-open')) {
+      mainNav.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+
+// ===============================
+// Gallery Lightbox (Gallery Page)
+// ===============================
+const galleryImages = document.querySelectorAll('.gallery-grid img');
 const lightbox = document.querySelector('.lightbox');
-const lightboxImage = document.querySelector('.lightbox-image');
+const lightboxImg = document.querySelector('.lightbox-image');
 const lightboxClose = document.querySelector('.lightbox-close');
 
-if (galleryItems && lightbox && lightboxImage && lightboxClose) {
-  galleryItems.forEach(img => {
+if (galleryImages && lightbox && lightboxImg && lightboxClose) {
+  galleryImages.forEach(img => {
     img.addEventListener('click', () => {
-      lightboxImage.src = img.src;
-      lightboxImage.alt = img.alt;
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
       lightbox.style.display = 'flex';
       lightbox.setAttribute('aria-hidden', 'false');
     });
@@ -45,7 +60,9 @@ if (galleryItems && lightbox && lightboxImage && lightboxClose) {
   });
 }
 
-// Dynamic year in footer
+// ===============================
+// Dynamic Footer Year
+// ===============================
 const yearSpan = document.getElementById('year');
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
