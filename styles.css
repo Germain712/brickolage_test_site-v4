@@ -2,7 +2,7 @@
   --color-bg: #f5f7fb;
   --color-surface: #ffffff;
   --color-primary: #1b4f72; /* deep blue */
-  --color-accent: #27ae60;  /* green */
+  --color-accent: #27ae60; /* green */
   --color-text: #222222;
   --color-muted: #6c7a89;
   --color-border: #dde3ee;
@@ -24,7 +24,13 @@ html {
 
 body {
   margin: 0;
-  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    "Poppins",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
@@ -267,7 +273,9 @@ section h2 {
   cursor: pointer;
   border: 1px solid var(--color-border);
   background-color: var(--color-surface);
-  transition: transform 0.2s ease, filter 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
 }
 
 .gallery-grid img:hover,
@@ -347,7 +355,128 @@ section h2 {
   background-color: var(--color-surface);
 }
 
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+  transform: scale(1.1);
+  background-color: var(--color-primary);
+}
+
+.social-icons svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--color-text);
+}
+
+.social-icons a:hover svg {
+  fill: #ffffff;
+}
+
+/* WhatsApp brand color on hover */
+.social-icons a[aria-label="WhatsApp"]:hover {
+  background-color: #25d366; /* WhatsApp green */
+}
+
+.social-icons a[aria-label="WhatsApp"]:hover svg {
+  fill: #ffffff;
+}
+
 /* FOOTER */
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social a {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  transform: scale(1.1);
+  background-color: var(--color-primary);
+}
+
+.footer-social svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--color-text);
+}
+
+.footer-social a:hover svg {
+  fill: #ffffff;
+}
+
+/* WhatsApp brand hover */
+.footer-social a[aria-label="WhatsApp"]:hover {
+  background-color: #25d366;
+}
+
+.footer-social a[aria-label="WhatsApp"]:hover svg {
+  fill: #ffffff;
+}
+
+/* Tooltip support */
+.footer-social a {
+  position: relative;
+}
+
+.footer-social a::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-text);
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-social a:hover::after,
+.footer-social a:focus::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(4px);
+}
 
 .site-footer {
   padding: 1.5rem;
@@ -369,7 +498,9 @@ section h2 {
     transform: translateY(-10px);
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
   }
 
   .main-nav ul {

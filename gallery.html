@@ -1,52 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery | Brick‑O‑Lage Construction</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="logo-area">
-      <img src="imgs/logo.jpeg" alt="Brick‑O‑Lage Construction logo" class="logo-img">
-      <div class="logo-text"><span class="brand-name">Brick‑O‑Lage Construction</span><span class="brand-tagline">From plan in hand to key in hand</span></div>
-    </div>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-      <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
-    </button>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html" class="active">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="gallery">
-      <h1>Project Gallery</h1>
-      <div class="gallery-grid">
-        <img src="imgs/balcony_sunset_view_top.jpeg" alt="Multi‑storey building under construction">
-        <img src="imgs/builders_concrete_building_progress.jpeg" alt="Modern tiled bathroom">
-        <img src="imgs/en_suite_bathroom_top_floor.jpeg" alt="Modern kitchen with white cabinets">
-        <img src="imgs/ground_&_second_floor_progress-12-05-2026.jpeg" alt="Balcony view over Caribbean Sea">
-        <img src="imgs/ground_floor_concrete_paving-22-04-2026.jpeg" alt="Decorative concrete blocks">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Brick‑O‑Lage Construction</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo-area">
+        <img
+          src="imgs/logo.jpeg"
+          alt="Brick‑O‑Lage Construction logo"
+          class="logo-img"
+        />
+        <div class="logo-text">
+          <span class="brand-name">Brick‑O‑Lage Construction</span
+          ><span class="brand-tagline">From plan in hand to key in hand</span>
+        </div>
       </div>
-    </section>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span
+        ><span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="lightbox" aria-hidden="true">
-      <button class="lightbox-close" aria-label="Close image">&times;</button>
-      <img src="" alt="" class="lightbox-image">
-    </div>
-  </main>
+    <main>
+      <section class="gallery">
+        <h1>Project Gallery</h1>
+        <div class="gallery-grid">
+          <img
+            src="imgs/balcony_sunset_view_top.jpeg"
+            alt="Multi‑storey building under construction"
+          />
+          <img
+            src="imgs/builders_concrete_building_progress.jpeg"
+            alt="Modern tiled bathroom"
+          />
+          <img
+            src="imgs/en_suite_bathroom_top_floor.jpeg"
+            alt="Modern kitchen with white cabinets"
+          />
+          <img
+            src="imgs/ground_&_second_floor_progress-12-05-2026.jpeg"
+            alt="Balcony view over Caribbean Sea"
+          />
+          <img
+            src="imgs/ground_floor_concrete_paving-22-04-2026.jpeg"
+            alt="Decorative concrete blocks"
+          />
+        </div>
+      </section>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Brick‑O‑Lage Construction.</p>
-  </footer>
+      <div class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close image">&times;</button>
+        <img src="" alt="" class="lightbox-image" />
+      </div>
+    </main>
 
-  <script src="script.js"></script>
-</body>
+    <footer class="site-footer">
+      <div class="footer-social">
+        <a
+          href="https://www.facebook.com/shiva.maghsoudian"
+          target="_blank"
+          aria-label="Facebook"
+          data-tooltip="Facebook"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12"
+            ></path>
+          </svg>
+        </a>
+
+        <a
+          href="https://www.instagram.com/letstalk_ir"
+          target="_blank"
+          aria-label="Instagram"
+          data-tooltip="Instagram"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M7 2C4 2 2 4 2 7v10c0 3 2 5 5 5h10c3 0 5-2 5-5V7c0-3-2-5-5-5H7zm10 2c2 0 3 1 3 3v10c0 2-1 3-3 3H7c-2 0-3-1-3-3V7c0-2 1-3 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.8-2.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z"
+            ></path>
+          </svg>
+        </a>
+
+        <a
+          href="https://www.tiktok.com/@misspurple.1111"
+          target="_blank"
+          aria-label="TikTok"
+          data-tooltip="TikTok"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2h2c.1 1.4.8 2.7 2 3.6 1 .8 2.2 1.2 3.5 1.3v2.2c-1.6-.1-3.1-.6-4.4-1.5v6.6c0 2.8-2.3 5-5 5s-5-2.2-5-5 2.3-5 5-5c.3 0 .7 0 1 .1V7.1c-.3 0-.7-.1-1-.1-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7V6.9c-1.3-1-2.3-2.5-2.6-4.1H12z"
+            ></path>
+          </svg>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/shiva-maghsoudian-6784a12a2/"
+          target="_blank"
+          aria-label="LinkedIn"
+          data-tooltip="LinkedIn"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.8-2.2 4-2.2 4.3 0 5.1 2.8 5.1 6.4V24h-4v-8.3c0-2-.1-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.4V24h-4V8z"
+            ></path>
+          </svg>
+        </a>
+
+        <a
+          href="https://wa.me/17673161119"
+          target="_blank"
+          aria-label="WhatsApp"
+          data-tooltip="WhatsApp"
+        >
+          <svg viewBox="0 0 32 32">
+            <path
+              d="M16 3C9.4 3 4 8.4 4 15c0 2.5.8 4.9 2.1 6.9L4 29l7.3-2.1c1.9 1 4.1 1.6 6.7 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-2.1 0-4-.6-5.6-1.6l-.4-.2-4.3 1.2 1.2-4.2-.3-.4c-1.2-1.7-1.9-3.7-1.9-5.8 0-5.6 4.6-10.2 10.2-10.2s10.2 4.6 10.2 10.2-4.6 10.2-10.2 10.2zm5.6-7.5c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.1-.3.2-.6.1-.3-.1-1.4-.5-2.6-1.6-1-1-1.6-2.2-1.8-2.5-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.4.1-.1.2-.3.3-.4.1-.1.1-.2.2-.3.1-.1.1-.3 0-.5-.1-.1-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.2 3.2c.1.2 2.2 3.4 5.3 4.7.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.1-.3-.2-.6-.3z"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <p>&copy; <span id="year"></span> Brick‑O‑Lage Construction.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
